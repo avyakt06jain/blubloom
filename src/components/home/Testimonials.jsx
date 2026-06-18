@@ -59,6 +59,7 @@ export default function Testimonials() {
 
   return (
     <section
+      className="testimonial-pad"
       style={{
         padding: '120px 48px',
         background: `linear-gradient(160deg, ${C.blueDark} 0%, ${C.blue} 60%, #1f4570 100%)`,
@@ -129,7 +130,7 @@ export default function Testimonials() {
 
           <Label style={{ color: 'rgba(201,169,110,0.8)', borderColor: 'rgba(201,169,110,0.3)' }}>Client Love</Label>
           <h2
-            className="font-playfair"
+            className="font-playfair hero-title"
             style={{ fontSize: 48, fontWeight: 600, color: '#fff', marginBottom: 56, marginTop: 12 }}
           >
             What Our Clients Say
@@ -144,6 +145,7 @@ export default function Testimonials() {
         >
           <AnimatePresence mode="wait">
             <motion.div
+              className="testimonial-card"
               key={idx}
               initial={{ opacity: 0, y: 30, scale: 0.97 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -173,7 +175,7 @@ export default function Testimonials() {
               </div>
 
               <p
-                className="font-playfair"
+                className="font-playfair testimonial-text"
                 style={{
                   fontSize: 21, color: 'rgba(255,255,255,0.92)', lineHeight: 1.9,
                   fontStyle: 'italic', marginBottom: 40,

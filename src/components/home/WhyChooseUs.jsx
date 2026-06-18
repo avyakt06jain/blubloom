@@ -15,13 +15,13 @@ const REASONS = [
 export default function WhyChooseUs() {
   return (
     <section style={{ background: C.blue, padding: '110px 48px' }} className="section-pad">
-      <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto' }} className="hero-container">
         <FadeIn style={{ textAlign: 'center', marginBottom: 70 }}>
           <Label>Why Blubloom</Label>
           <h2 className="font-playfair" style={{ fontSize: 46, fontWeight: 600, color: '#FAF6F0' }}>The Blubloom Difference</h2>
         </FadeIn>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 28 }} className="grid-4">
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 28 }} className="grid-4 grid-1-mob">
           {REASONS.map((item, i) => (
             <FadeIn key={item.title} delay={i * 0.1}>
               <motion.div

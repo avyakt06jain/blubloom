@@ -45,19 +45,33 @@ body {
   .desktop-only { display: none !important; }
   .mobile-only  { display: flex !important; }
 
-  .grid-4  { grid-template-columns: repeat(2, 1fr) !important; }
+  .grid-4  { grid-template-columns: repeat(2, 1fr) !important; gap: 16px !important; }
   .grid-3  { grid-template-columns: 1fr !important; }
   .grid-2  { grid-template-columns: 1fr !important; }
-  .stat-grid { grid-template-columns: repeat(2, 1fr) !important; }
-  .proj-grid { grid-template-columns: 1fr !important; }
+  .grid-1-mob { grid-template-columns: 1fr !important; }
+  .stat-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 24px !important; }
+  .proj-grid { display: flex !important; flex-direction: column !important; }
+  .proj-item { height: 300px !important; }
 
   .alt-row          { flex-direction: column !important; }
   .alt-row-reverse  { flex-direction: column !important; }
 
   .section-pad { padding: 60px 20px !important; }
-  .hero-title  { font-size: 48px !important; }
+  .hero-title  { font-size: 52px !important; line-height: 1.1 !important; margin-right: 8px !important; }
+  .hero-sub    { font-size: 16px !important; margin-bottom: 32px !important; }
+  .hero-container { padding: 0 16px !important; }
   .nav-pad     { padding: 16px 20px !important; }
   .process-line { display: none !important; }
+
+  .testimonial-pad { padding: 60px 20px !important; }
+  .testimonial-card { padding: 30px 20px !important; }
+  .testimonial-text { font-size: 17px !important; margin-bottom: 24px !important; }
+
+  .footer-pad { padding: 60px 20px 20px !important; }
+
+  .cta-title { font-size: 38px !important; line-height: 1.2 !important; }
+  .philosophy-title { font-size: 34px !important; line-height: 1.3 !important; }
+  .stats-val { font-size: 42px !important; }
 }
 
 @media (min-width: 769px) {

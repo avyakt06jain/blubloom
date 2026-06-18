@@ -14,7 +14,7 @@ export default function CTABanner() {
       <div style={{ position: 'relative', zIndex: 1 }}>
         <FadeIn>
           <Label>Let&apos;s Get Started</Label>
-          <h2 className="font-playfair" style={{ fontSize: 'clamp(34px,6vw,64px)', fontWeight: 700, color: '#FAF6F0', maxWidth: 700, margin: '0 auto 24px', lineHeight: 1.15 }}>
+          <h2 className="font-playfair cta-title" style={{ fontSize: 'clamp(34px,6vw,64px)', fontWeight: 700, color: '#FAF6F0', maxWidth: 700, margin: '0 auto 24px', lineHeight: 1.15 }}>
             Ready to Transform Your Space?
           </h2>
           <p className="font-dm" style={{ fontSize: 18, color: 'rgba(250,246,240,0.72)', maxWidth: 480, margin: '0 auto 52px', lineHeight: 1.7 }}>

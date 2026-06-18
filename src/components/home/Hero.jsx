@@ -36,6 +36,7 @@ export default function Hero() {
 
       {/* Content */}
       <motion.div
+        className="hero-container"
         style={{ position: 'relative', zIndex: 1, textAlign: 'center', padding: '0 24px', maxWidth: 900, margin: '0 auto', opacity: textOp }}
       >
         {/* Eyebrow */}
@@ -66,7 +67,7 @@ export default function Hero() {
         {/* Subtitle */}
         <motion.p
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.1, duration: 0.8 }}
-          className="font-dm"
+          className="font-dm hero-sub"
           style={{ fontSize: 19, color: 'rgba(250,246,240,0.78)', marginTop: 24, marginBottom: 50, lineHeight: 1.7, maxWidth: 540, marginLeft: 'auto', marginRight: 'auto' }}
         >
           Transforming homes &amp; offices across Delhi NCR — one extraordinary space at a time.

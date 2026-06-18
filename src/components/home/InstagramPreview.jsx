@@ -13,7 +13,7 @@ export default function InstagramPreview() {
     <section style={{ padding: '110px 48px', maxWidth: 1200, margin: '0 auto' }} className="section-pad">
       <FadeIn style={{ textAlign: 'center', marginBottom: 50 }}>
         <Label>@blubloominteriors</Label>
-        <h2 className="font-playfair" style={{ fontSize: 46, fontWeight: 600, color: C.blue }}>Follow Our Journey</h2>
+        <h2 className="font-playfair hero-title" style={{ fontSize: 46, fontWeight: 600, color: C.blue }}>Follow Our Journey</h2>
         <p className="font-dm" style={{ color: '#888', marginTop: 12, fontSize: 15 }}>40K+ Followers · 140+ Posts on Instagram</p>
       </FadeIn>
 

@@ -24,7 +24,7 @@ const CONTACT_ITEMS = [
 
 export default function Footer() {
   return (
-    <footer style={{ background: C.blueDark, padding: '80px 48px 40px', color: 'rgba(250,246,240,0.75)' }}>
+    <footer className="footer-pad" style={{ background: C.blueDark, padding: '80px 48px 40px', color: 'rgba(250,246,240,0.75)' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
 
         {/* ── Grid ── */}

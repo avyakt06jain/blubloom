@@ -10,8 +10,8 @@ const FEATURED = SERVICES.slice(0, 6)
 
 export default function ServicesOverview() {
   return (
-    <section style={{ background: C.bg2, padding: '72px 0 80px' }}>
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 48px' }}>
+    <section className="section-pad" style={{ background: C.bg2, padding: '72px 0 80px' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 48px' }} className="hero-container">
 
         {/* Centered Header */}
         <FadeIn style={{ textAlign: 'center', marginBottom: 52 }}>
@@ -40,7 +40,7 @@ export default function ServicesOverview() {
         </FadeIn>
 
         {/* Symmetric 3×2 Grid */}
-        <div style={{
+        <div className="grid-3" style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(3, 1fr)',
           gap: 24,

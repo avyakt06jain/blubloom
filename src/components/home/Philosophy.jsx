@@ -7,7 +7,7 @@ export default function Philosophy() {
     <section style={{ padding: '80px 48px 72px', maxWidth: 860, margin: '0 auto', textAlign: 'center' }} className="section-pad">
       <FadeIn>
         <Label>Our Philosophy</Label>
-        <h2 className="font-playfair" style={{ fontSize: 50, fontWeight: 600, color: C.blue, lineHeight: 1.18, marginBottom: 26 }}>
+        <h2 className="font-playfair philosophy-title" style={{ fontSize: 50, fontWeight: 600, color: C.blue, lineHeight: 1.18, marginBottom: 26 }}>
           Design is not just what it <em>looks like</em> —<br />it&apos;s how it <em>feels.</em>
         </h2>
         <p className="font-dm" style={{ fontSize: 18, color: '#666', lineHeight: 1.85, maxWidth: 660, margin: '0 auto' }}>

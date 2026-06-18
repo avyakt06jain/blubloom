@@ -25,7 +25,7 @@ export default function FeaturedProjects() {
 
       <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gridTemplateRows: 'auto auto', gap: 20 }} className="proj-grid">
         {FEATURED.map(({ p, col, h }, i) => (
-          <FadeIn key={p.id} delay={i * 0.1} style={{ gridColumn: col }}>
+          <FadeIn key={p.id} delay={i * 0.1} style={{ gridColumn: col }} className="proj-item">
             <Link href="/portfolio" style={{ textDecoration: 'none', display: 'block', height: h }}>
               <motion.div
                 whileHover="hov"
