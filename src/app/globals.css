@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #FAF6F0;
+  color: #2A2A2A;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #FAF6F0; }
+::-webkit-scrollbar-thumb { background: #C9A96E; border-radius: 10px; }
+
+/* Font helpers */
+.font-playfair { font-family: 'Playfair Display', serif; }
+.font-dm       { font-family: 'DM Sans', sans-serif; }
+.font-manrope  { font-family: 'Manrope', sans-serif; }
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.05); }
+}
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-12px); }
+}
+
+.wa-pulse  { animation: pulse  2.5s ease-in-out infinite; }
+.float-el  { animation: floatY 5s   ease-in-out infinite; }
+
+/* Responsive helpers */
+@media (max-width: 768px) {
+  .desktop-only { display: none !important; }
+  .mobile-only  { display: flex !important; }
+
+  .grid-4  { grid-template-columns: repeat(2, 1fr) !important; }
+  .grid-3  { grid-template-columns: 1fr !important; }
+  .grid-2  { grid-template-columns: 1fr !important; }
+  .stat-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .proj-grid { grid-template-columns: 1fr !important; }
+
+  .alt-row          { flex-direction: column !important; }
+  .alt-row-reverse  { flex-direction: column !important; }
+
+  .section-pad { padding: 60px 20px !important; }
+  .hero-title  { font-size: 48px !important; }
+  .nav-pad     { padding: 16px 20px !important; }
+  .process-line { display: none !important; }
+}
+
+@media (min-width: 769px) {
+  .mobile-only { display: none !important; }
+}

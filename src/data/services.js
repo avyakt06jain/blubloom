@@ -1,0 +1,77 @@
+import { I, DLF, GK } from '@/constants/images'
+
+/** @type {Array<{ id: string, title: string, icon: string, desc: string, features: string[], img: string }>} */
+export const SERVICES = [
+  {
+    id: 'kitchens',
+    title: 'Modular Kitchens',
+    icon: '',
+    desc: 'L-shaped, U-shaped, parallel, island & peninsula layouts with premium hardware and stone countertops.',
+    features: ['Custom cabinetry', 'Premium hardware', 'Stone countertops', 'Smart storage solutions'],
+    img: I.kit1,
+  },
+  {
+    id: 'wardrobes',
+    title: 'Wardrobes & Storage',
+    icon: '',
+    desc: 'Walk-in closets, sliding and hinged wardrobes — bespoke storage solutions designed for your lifestyle.',
+    features: ['Walk-in closets', 'Sliding wardrobes', 'Hinged wardrobes', 'Custom storage units'],
+    img: GK.wardrobe,
+  },
+  {
+    id: 'windows',
+    title: 'UPVC Aluminium Windows & Doors',
+    icon: '',
+    desc: 'Energy-efficient, noise-reducing window & door systems in sliding, casement & tilt-and-turn styles.',
+    features: ['Glass-to-glass profiles', 'Sliding & casement', 'Energy efficient', 'Noise reduction'],
+    img: DLF.living3,
+  },
+  {
+    id: 'wallpanel',
+    title: 'Wall Paneling & Decor',
+    icon: '',
+    desc: 'PVC panels, 3D sculptural panels, wood panelling with integrated lighting, and luxury wallpaper collections.',
+    features: ['3D wall panels', 'Wood panelling', 'Integrated LED lighting', 'Luxury wallpapers'],
+    img: GK.bedroom2,
+  },
+  {
+    id: 'flooring',
+    title: 'Wooden & Vinyl Flooring',
+    icon: '',
+    desc: 'Floating wood, engineered hardwood, laminate & vinyl plank flooring that transforms every room underfoot.',
+    features: ['Engineered wood', 'Laminate flooring', 'Vinyl plank', 'Floating floors'],
+    img: I.floor,
+  },
+  {
+    id: 'ceiling',
+    title: 'False Ceilings (POP)',
+    icon: '',
+    desc: 'Designer POP and gypsum board ceilings with integrated LED lighting — where architecture meets artistry.',
+    features: ['POP ceilings', 'Gypsum board', 'LED integration', 'Custom shapes & coffers'],
+    img: DLF.tvWall,
+  },
+  {
+    id: 'furniture',
+    title: 'Custom Furniture & Decor',
+    icon: '',
+    desc: 'Bespoke sofas, recliners, TV units, study tables and beds — furniture crafted exactly for your space.',
+    features: ['Custom sofas & recliners', 'TV & entertainment units', 'Study & work desks', 'Beds & headboards'],
+    img: DLF.living1,
+  },
+  {
+    id: 'residential',
+    title: 'Complete Home Interiors',
+    icon: '',
+    desc: 'End-to-end turnkey residential projects — from concept design to final handover, we handle everything.',
+    features: ['Turnkey project delivery', 'Full home makeovers', '3D design previews', 'Project management'],
+    img: DLF.mediaRoom,
+  },
+  {
+    id: 'commercial',
+    title: 'Commercial Interiors',
+    icon: '',
+    desc: 'Dynamic office spaces, retail stores, restaurants & showrooms designed to impress clients and perform.',
+    features: ['Office workspaces', 'Retail & showrooms', 'Restaurants & cafes', 'Brand-aligned design'],
+    img: I.off1,
+  },
+]
