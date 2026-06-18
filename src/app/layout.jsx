@@ -5,6 +5,7 @@ import WhatsAppButton   from '@/components/layout/WhatsAppButton'
 import MobileCTA        from '@/components/layout/MobileCTA'
 
 export const metadata = {
+  metadataBase: new URL('https://blubloom.vercel.app'),
   title:       'Blubloom Interior & Contractor LLP | Where Spaces Bloom',
   description: 'Premium interior design & contracting across Delhi NCR. Modular kitchens, wardrobes, false ceilings, complete home & commercial interiors.',
   keywords:    'interior design delhi, modular kitchen, wardrobe design, false ceiling, home interiors delhi ncr',
@@ -12,6 +13,14 @@ export const metadata = {
     title:       'Blubloom Interior & Contractor LLP',
     description: 'Where Spaces Bloom — premium interior design & contracting.',
     type:        'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Blubloom Interior Design',
+      },
+    ],
   },
 }
 
