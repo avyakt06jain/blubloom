@@ -9,7 +9,7 @@ import { PORTFOLIO_CATS } from '@/data/portfolio'
  */
 export default function FilterBar({ active, onChange, total }) {
   return (
-    <div style={{ padding: '40px 48px 20px', borderBottom: '1px solid rgba(201,169,110,0.15)', background: '#fff', position: 'sticky', top: 62, zIndex: 100, backdropFilter: 'blur(20px)' }}>
+    <div className="filter-pad" style={{ padding: '40px 48px 20px', borderBottom: '1px solid rgba(201,169,110,0.15)', background: '#fff', position: 'sticky', top: 62, zIndex: 100, backdropFilter: 'blur(20px)' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center' }}>
         <span className="font-manrope" style={{ fontSize: 12, color: '#888', letterSpacing: '0.15em', textTransform: 'uppercase', marginRight: 8 }}>Filter:</span>
 

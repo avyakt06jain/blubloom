@@ -68,6 +68,12 @@ body {
   .testimonial-text { font-size: 17px !important; margin-bottom: 24px !important; }
 
   .footer-pad { padding: 60px 20px 20px !important; }
+  .filter-pad { padding: 20px 20px 10px !important; }
+
+  .lightbox-img { height: 250px !important; }
+  .lightbox-pad { padding: 24px 20px !important; }
+
+  .masonry-grid { columns: 1 !important; }
 
   .cta-title { font-size: 38px !important; line-height: 1.2 !important; }
   .philosophy-title { font-size: 34px !important; line-height: 1.3 !important; }

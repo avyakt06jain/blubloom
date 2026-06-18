@@ -22,10 +22,10 @@ export default function Lightbox({ project, onClose }) {
             onClick={e => e.stopPropagation()}
             style={{ background: '#fff', borderRadius: 20, overflow: 'hidden', maxWidth: 860, width: '100%', maxHeight: '90vh', overflowY: 'auto' }}
           >
-            <div style={{ height: 480, overflow: 'hidden' }}>
+            <div className="lightbox-img" style={{ height: 480, overflow: 'hidden' }}>
               <img src={project.img} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }}/>
             </div>
-            <div style={{ padding: '32px 36px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 20 }}>
+            <div className="lightbox-pad" style={{ padding: '32px 36px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 20 }}>
               <div>
                 <div className="font-manrope" style={{ fontSize: 11, color: C.gold, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 8 }}>{project.cat}</div>
                 <h3 className="font-playfair" style={{ fontSize: 26, fontWeight: 600, color: C.blue, marginBottom: 8 }}>{project.title}</h3>

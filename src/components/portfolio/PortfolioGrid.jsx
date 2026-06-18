@@ -18,7 +18,7 @@ export default function PortfolioGrid() {
       <FilterBar active={active} onChange={setActive} total={filtered.length} />
 
       <section style={{ padding: '48px 48px 100px', maxWidth: 1200, margin: '0 auto' }} className="section-pad">
-        <motion.div layout style={{ columns: 3, columnGap: 20 }} className="grid-3">
+        <motion.div layout style={{ columns: 3, columnGap: 20 }} className="masonry-grid">
           <AnimatePresence>
             {filtered.map((p, i) => (
               <motion.div
